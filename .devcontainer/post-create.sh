@@ -5,6 +5,9 @@ echo "Instalando dependencias del server..."
 cd server && npm install
 cd ..
 
+echo "Sembrando la base de datos..."
+cd server && npm run seed && cd ..
+
 echo "Instalando dependencias del client..."
 cd client && npm install
 cd ..
